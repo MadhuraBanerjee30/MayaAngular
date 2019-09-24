@@ -2,7 +2,7 @@
 <html ng-app="app" >
 <head>
   <meta charset="utf-8">
-  <title>Maya - Virtual Director</title>
+  <title>Maya - Digital Director</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
   <script src="app.js"></script>
@@ -13,25 +13,19 @@
         <div id="header-right">
                 <a>Home</a>
                 <a>About</a>
+				<a> Walk Through </a>
         </div>
     </div>
-<!--	<nav class="{{active}}" ng-click="$event.preventDefault()">
-      <div class="navbar-brand">
-        <a class="navbar-item">
-          <img src="pwc.jpg">
-        </a>
-      </div> -->
-	 <!-- <img src="pwc.jpg" height="75" width="75"> </img>
-		<a href="#" class="home" ng-click="active='home'">Home</a>
-		<a href="#" class="about" ng-click="active='about'">About</a>
-		<a href="#" class="walkthrough" ng-click="active='contact'">Walk Through</a>
-	</nav> -->
 	<br/>
-	<iframe src="testvid.mp4" id="video1" height="256" align="left"> 
+	<div id="contentframe" style="position:relative; left: 200px;">
+	<iframe src="testvid.mp4" id="video1" height="325" align="left"> 
 	</iframe>
+	</div>
+	<div id="contentframe" style="position:relative; right: -300px;">
 	<iframe src="ABOUT.md" id="doc1" height="512" align="center"> 
 	</iframe> 
-	<div ng-controller="myCtrl">
+	</div>
+	<div ng-controller="myCtrl" style="position:relative; left: 250px; top: -100px;">
     <button ng-click="#">START</button>
 	<button ng-click="#">DEMO </button>
 	</div> 
