@@ -9,13 +9,13 @@ body {
 
 #header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color:red;
   padding: 5px 50px;
 }
 
 #header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -24,9 +24,43 @@ body {
   border-radius: 4px;
 }
 
-#header a.logo {
+iframe{
+  height: 300px;
+  width: 390px;  
+}
+
+button {  
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#buttonholder{
+  margin-left: 26%;
+  bottom: 20%;
+  left:25%;
+}
+
+#iframes{
+  padding: 10px;
+  margin-left: 21%;
+  margin-right: 10%;
+  margin-top:2%;
+}
+
+
+#logo {
   font-size: 25px;
   font-weight: bold;
+  height: 50px;
+  width: 100px;
 }
 
 #header a:hover {
